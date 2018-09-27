@@ -1,5 +1,5 @@
 process.env.NODE_ENV = !process.env.NODE_ENV ? "development" : process.env.NODE_ENV
-global.pwd = process.env.PWD;
+global.pwd = "../..";
 global.env = require(pwd + "/config/env/" + process.env.NODE_ENV).default;
 require("./lib/globals")
 require(pwd + "/config/globals")

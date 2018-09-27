@@ -1,6 +1,6 @@
 {
   "name": "wohlig-framework-core",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Wohlig Framework Core",
   "main": "index.js",
   "scripts": {

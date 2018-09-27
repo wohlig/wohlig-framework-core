@@ -1,16 +1,16 @@
 process.env.NODE_ENV = !process.env.NODE_ENV ? "development" : process.env.NODE_ENV
 global.pwd = process.env.PWD;
-global.env = require(pwd + "./config/env/" + process.env.NODE_ENV).default;
-import "./lib/globals"
-import "../../config/globals"
-import "./lib/mongoose.js"
-import "./lib/express.js"
-import "./lib/middleware.js"
-import "../../config/middleware.js"
-import "./lib/responses.js"
-import "./lib/controllers.js"
-import "./lib/models.js"
-import "./lib/services.js"
+global.env = require(pwd + "/config/env/" + process.env.NODE_ENV).default;
+require("./lib/globals")
+require(pwd + "/config/globals")
+require("./lib/mongoose.js")
+require("./lib/express.js")
+require("./lib/middleware.js")
+require(pwd + "/config/middleware.js")
+require("./lib/responses.js")
+require("./lib/controllers.js")
+require("./lib/models.js")
+require("./lib/services.js")
 app.listen(port, () => {
     console.log(`Server Started at Port ${port}`)
 })

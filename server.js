@@ -1,11 +1,12 @@
 process.env.NODE_ENV = !process.env.NODE_ENV ? "development" : process.env.NODE_ENV
-global.env = require("./config/env/" + process.env.NODE_ENV).default;
+global.pwd = process.env.PWD;
+global.env = require(pwd + "./config/env/" + process.env.NODE_ENV).default;
 import "./lib/globals"
-import "./config/globals"
+import "../../config/globals"
 import "./lib/mongoose.js"
 import "./lib/express.js"
 import "./lib/middleware.js"
-import "./config/middleware.js"
+import "../../config/middleware.js"
 import "./lib/responses.js"
 import "./lib/controllers.js"
 import "./lib/models.js"

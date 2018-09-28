@@ -319,6 +319,12 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+node-cron@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/node-cron/-/node-cron-2.0.1.tgz#c30ba49a34a0123dec3ccfa3cda752f09a872954"
+  dependencies:
+    tz-offset "0.0.1"
+
 on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
@@ -470,6 +476,10 @@ type-is@~1.6.15, type-is@~1.6.16:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.18"
+
+tz-offset@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/tz-offset/-/tz-offset-0.0.1.tgz#fef920257024d3583ed9072a767721a18bdb8a76"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"

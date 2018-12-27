@@ -14,6 +14,6 @@ require("./lib/models.js");
 require("./lib/views.js");
 
 app.listen(env.port, () => {
-  console.log(`Server Started at Port ${port}`);
+  console.log(`Server Started at Port ${env.port}`);
   require(pwd + "/config/cron");
 });

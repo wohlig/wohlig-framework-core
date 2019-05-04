@@ -14,8 +14,8 @@ require("./lib/models.js");
 require("./lib/views.js");
 require("./lib/test.js");
 
-var server = require("http").Server(app);
-var io = require("socket.io")(server);
+global.server = require("http").Server(app);
+global.io = require("socket.io")(server);
 
 server.listen(env.port, () => {
   console.log(`Server Started at Port ${env.port}`);

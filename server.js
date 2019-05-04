@@ -14,7 +14,10 @@ require("./lib/models.js");
 require("./lib/views.js");
 require("./lib/test.js");
 
-app.listen(env.port, () => {
+var server = require("http").Server(app);
+var io = require("socket.io")(server);
+
+server.listen(env.port, () => {
   console.log(`Server Started at Port ${env.port}`);
   require(pwd + "/config/cron");
 });

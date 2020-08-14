@@ -12,6 +12,6 @@ require("./lib/views.js");
 require("./lib/test.js");
 
 app.listen(env["PORT"], () => {
-  console.log(`Server Started at Port ${env.port}`);
+  console.log(`Server Started at Port ${env["PORT"]}`);
   require(pwd + "/config/cron");
 });

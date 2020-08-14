@@ -1,5 +1,6 @@
 global.pwd = __dirname + "/../..";
 global.env = process.env;
+console.log(env);
 require("./lib/globals");
 require(pwd + "/config/globals");
 require("./lib/mongoose.js");

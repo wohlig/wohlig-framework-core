@@ -1,8 +1,5 @@
-process.env.NODE_ENV = !process.env.NODE_ENV
-  ? "development"
-  : process.env.NODE_ENV;
 global.pwd = __dirname + "/../..";
-global.env = require(pwd + "/config/env/" + process.env.NODE_ENV).default;
+global.env = process.env;
 require("./lib/globals");
 require(pwd + "/config/globals");
 require("./lib/mongoose.js");

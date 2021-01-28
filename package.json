@@ -1,6 +1,6 @@
 {
   "name": "wohlig-framework-core-socket",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Wohlig Framework Core",
   "main": "index.js",
   "scripts": {
